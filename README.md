@@ -1,4 +1,7 @@
 # Aura
+
+>Me and GenAi (jenny) are like peas and carrots
+
 ## Vibe Coding in Action
 
 > "Human leadership, foresight, and nuanced problem-solving remain the indispensable drivers of innovation – capabilities AI cannot effectively replicate. The Aura project is designed to powerfully demonstrate how these inherent human strengths, when partnered with AI's accelerating power, yield truly innovative and highly impactful solutions. Our objective is clear: to not just create compelling products, but to fundamentally transform the entire development journey, unlocking significant new market value."
