@@ -1,11 +1,11 @@
-# taskbuddy_project/business/interfaces/ITaskRepository.py
+# taskbuddy_project/interfaces/ITaskRepository.py
 
 from abc import abstractmethod
 from typing import List
 import uuid
 
 # Import the generic ICrudRepository and Task model
-from business.interfaces.ICrudRepository import ICrudRepository
+from interfaces.ICrudRepository import ICrudRepository
 from task import Task
 
 # ITaskRepository now inherits from ICrudRepository, specializing it for Task entities

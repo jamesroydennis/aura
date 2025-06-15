@@ -8,7 +8,7 @@ from typing import Dict, Any, List # ADDED List to imports
 from data.base_csv_repository import BaseCsvRepository
 
 # Import the ITaskRepository interface
-from business.interfaces.ITaskRepository import ITaskRepository
+from interfaces.ITaskRepository import ITaskRepository
 
 # Import Task model
 from task import Task, TaskStatus

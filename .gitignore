@@ -1,24 +1,75 @@
-# Python bytecode
+# Global .gitignore for the Aura Monorepo Project
+
+# --- Python specific ignores ---
+# Python bytecode and compiled files
 __pycache__/
 *.pyc
 *.pyd
 *.so
+
 # Virtual environments
+# These patterns will ignore any folder named 'env', 'venv', '.env', '.venv'
+env/
+venv/
 .env/
 .venv/
-venv/
-env/
-# Pytest cache
+# If you create conda environments *inside* your project folders:
+# If you decide to put conda envs like aura-business-env inside the project,
+# you would list them here, e.g.:
+# aura-business-env/
+# aura-data-env/
+# aura-presentation-env/
+
+# --- Jupyter Notebook specific ignores ---
+# Checkpoints created by Jupyter
+.ipynb_checkpoints/
+# Backup files often created by editors for notebooks or Python scripts
+*.ipynb-checkpoints
+*.bak
+*.py-bak
+*.tmp
+
+# --- API Keys & Sensitive Files (CRITICAL - DO NOT COMMIT!) ---
+# This ensures your API key notebook is NEVER committed
+aura-business/gemini_api.ipynb
+# Add other sensitive file patterns here if needed (e.g., config files with credentials)
+# *.key
+# *.pem
+# *.env.local
+# google-api-key.txt # If you still have this file, ignore it too.
+
+# --- Frontend (React/Node.js) specific ignores ---
+# Node.js module dependencies
+node_modules/
+# React build output directory
+build/
+
+# --- IDE specific ignores ---
+# VS Code settings and temporary files
+.vscode/
+# IntelliJ IDEA / PyCharm settings and project files
+.idea/
+*.iml
+
+# --- Operating System specific ignores ---
+# macOS system files
+.DS_Store
+# Windows thumbnail cache and system files
+Thumbs.db
+desktop.ini
+
+# --- Build, Log, and Test Artifacts ---
+# Generic build output directories
+/build/
+/dist/
+# Log files
+*.log
+logs/
+# Pytest cache and coverage reports
 .pytest_cache/
 .coverage
 htmlcov/
-# IDE specific files
-.vscode/
-.idea/
-*.iml
-# OS generated files
-.DS_Store
-Thumbs.db
-# Logs and other temporary files
-*.log
-logs/
+
+
+# --- Custom Ignored Files ---
+/aura-business/gemini_api.ipynb

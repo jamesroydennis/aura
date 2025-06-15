@@ -14,7 +14,7 @@ from config.config import DEBUG_MODE
 from core.dependency_container import DependencyContainer
 
 # Import the ITaskRepository interface (our specific task contract)
-from business.interfaces.ITaskRepository import ITaskRepository
+from interfaces.ITaskRepository import ITaskRepository
 
 from task import Task
 from task_manager_service import TaskManagerService

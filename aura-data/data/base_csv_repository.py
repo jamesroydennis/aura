@@ -6,7 +6,7 @@ import os
 from abc import abstractmethod
 from typing import List, Optional, TypeVar, Generic, Dict, Any
 
-from business.interfaces.ICrudRepository import ICrudRepository
+from interfaces.ICrudRepository import ICrudRepository
 from loguru import logger
 
 # Define a TypeVar for the entity type

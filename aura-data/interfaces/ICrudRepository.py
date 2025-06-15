@@ -1,4 +1,4 @@
-# taskbuddy_project/business/interfaces/ICrudRepository.py
+# taskbuddy_project/interfaces/ICrudRepository.py
 
 from abc import ABC, abstractmethod
 from typing import List, TypeVar, Generic

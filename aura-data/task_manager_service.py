@@ -1,9 +1,9 @@
-# taskbuddy_project/business/task_manager_service.py
+# taskbuddy_project/task_manager_service.py
 
 from typing import List, Optional
 import uuid
 
-from business.interfaces.ITaskRepository import ITaskRepository
+from interfaces.ITaskRepository import ITaskRepository
 from task import Task, TaskStatus
 
 from loguru import logger
