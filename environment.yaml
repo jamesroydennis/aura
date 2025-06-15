@@ -1,0 +1,15 @@
+name: aura-root
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9           # Common Python version for monorepo consistency
+  - flask
+  - flask-cors
+  - pandas               # Required by aura-data's CsvTaskRepository
+  - numpy                # Used by pandas
+  - requests             # For aura-presentation's simulated API calls
+  - pip
+  - pip:
+    - google-generativeai # For AI interactions
+    - loguru              # Centralized logging for the entire monorepo
